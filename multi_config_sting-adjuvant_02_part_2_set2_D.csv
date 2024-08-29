@@ -1,0 +1,28 @@
+# this is a comment,,
+[gene-expression],,# Section describing configuration of Gene Expression libraries only unless otherwise specified.
+reference,/vol01/genome/Human_10x_ref_GRCh38/refdata-gex-GRCh38-2020-A,# Path of folder containing 10x-compatible reference. Required for gene expression and Feature Barcode libraries.
+probe-set,/share/tools/Modules/cellranger/7.1.0/probe_sets/Chromium_Human_Transcriptome_Probe_Set_v1.0.1_GRCh38-2020-A.csv,# Probe set CSV file declaring probe constructs and associated barcodes. Required.
+,,
+[libraries],,# Table describing the input sequencing libraries. Must contain the header and 1 or more rows. Required.
+fastq_id,fastqs,feature_types
+set2-D_1,/vol08/ngs/Globus/GaleLab-112/HL2WMDSX7/outs/fastq_path/HL2WMDSX7,Gene Expression
+set2-D_2,/vol08/ngs/Globus/GaleLab-113/HL2WFDSX7/outs/fastq_path/HL2WFDSX7,Gene Expression
+
+[samples],,# Section describing sample information for Fixed RNA Profiling multiplexed libraries.
+sample_id,probe_barcode_ids,
+MK434_097,BC001,# 97 - 112 were replicated across GaleLab-112 and GaleLab-113
+MK434_098,BC002,
+MK434_099,BC003,
+MK434_100,BC004,
+MK434_101,BC005,
+MK434_102,BC006,
+MK434_103,BC007,
+MK434_104,BC008,
+MK434_105,BC009,
+MK434_106,BC010,
+MK434_107,BC011,
+MK434_108,BC012,
+MK434_109,BC013,
+MK434_110,BC014,
+MK434_111,BC015,
+MK434_112,BC016,
